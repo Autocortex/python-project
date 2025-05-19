@@ -1,0 +1,5 @@
+In Python you can automate routine tasks
+In Python you can create functions
+In Python you can solve problems
+In Python you can create games
+In Python you can create websites
