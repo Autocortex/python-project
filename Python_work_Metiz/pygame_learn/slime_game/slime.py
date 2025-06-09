@@ -23,6 +23,10 @@ class Slime():
             self.y -= self.settings.slime_speed
         self.rect.y = self.y
 
+    def slime_center(self):
+        """Start position slime."""
+        self.rect.midleft = self.screen_rect.midleft
+        self.y = float(self.rect.y)
 
     def blitme(self):
         """Draws slime"""

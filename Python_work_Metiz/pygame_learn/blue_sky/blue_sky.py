@@ -1,41 +1,44 @@
-import sys
-
 import pygame
+import sys
+from random import randint
 
-from settings import Settings
-from slime import Slime
+from star import Star
 
-
-class BlueSky():
-    """Создает окно Pygame с синим фоном."""
+class Sky():
 
     def __init__(self):
-        """Инициализирует окно pygame"""
         pygame.init()
-        self.settings = Settings()
+        self.width = 800
+        self.height = 600
+        self.screen = pygame.display.set_mode((self.width,self.height))
+        self.stars = pygame.sprite.Group()
+        self._create_fleet()
 
-        self.screen = pygame.display.set_mode(
-            (self.settings.screen_width, self.settings.screen_height))
-        pygame.display.set_caption("Blue Sky")
+    def _create_fleet(self):
+        star = Star(self)
+        star_width = star.rect.width
+        available_space_x = self.width - (2  * star_width)
+        number_stars_x = available_space_x // (2 * star_width)
+        star_height = star.rect.height
+        available_space_y = self.height
+        number_rows = available_space_y // ( 2 * star_height)
+        for row_number in range(number_rows):
+            for star_number in range(number_stars_x):
+                star = Star(self)
+                star.x = star_width + 2 * randint(40, 80) * star_number
+                star.rect.x = star.x
+                star.rect.y = star_height + 2 * randint(30, 80) * row_number
+                self.stars.add(star)
 
-        self.slime = Slime(self)
-
-    def run_game(self):
-        """Запуск основного цикла игры."""
+    def run(self):
         while True:
-            #Отслеживание событий мыши и клавиатуры.
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
-
-            #При каждом проходе цикла прорисовывается экран.
-            self.screen.fill(self.settings.bg_color)
-            self.slime.blitme()
-
-            #Отображение последнего прорисованного экрана.
+            self.screen.fill((30,30,30))
+            self.stars.draw(self.screen)
             pygame.display.flip()
 
 if __name__ == '__main__':
-    #Создание экземпляра и запуск.
-    bs = BlueSky()
-    bs.run_game()
+    sky = Sky()
+    sky.run()
