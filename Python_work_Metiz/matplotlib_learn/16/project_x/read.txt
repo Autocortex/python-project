@@ -1,0 +1,11 @@
+Based on Chapter 16 of Eric Matthes' book,
+I created a mini-project that automatically reads data from CSV files and generates a temperature graph.
+It also extracts the city name from the weather station name recorded in the data.
+
+Possible improvement ideas include:
+
+* using **Plotly** for interactive graphs,
+* comparing data between multiple cities,
+* generating a **text summary** based on the data,
+* saving results to a file,
+* and creating separate graphs for other environmental parameters.

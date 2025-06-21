@@ -1,0 +1,66 @@
+**Упрощённый план игры под Python (для самостоятельной реализации)**
+**Simplified Game Plan in Python (for self-learning implementation)**
+
+Цель: создать простую 2D-игру на Python с использованием Pygame, чтобы укрепить знания после книги Эрика Матиза и первого проекта.
+Goal: Create a simple 2D game using Python and Pygame to reinforce concepts learned from Eric Matthes's book and your first project.
+
+---
+
+**Жанр / Genre:**
+- Защита базы + сбор ресурсов (light tower defense / survival grind)
+- Base defense + resource collection
+
+---
+
+**Основные механики / Core Mechanics:**
+
+1. **Меню игры / Game Menu**
+   - Старт / Start
+   - Выход / Quit
+
+2. **Одна основная сцена / One main scene:**
+   - Игрок (прямоугольник/спрайт) двигается по экрану (WASD) / Player moves with WASD
+   - Сбор ресурсов при столкновении / Collect resources on collision
+   - Простой инвентарь на словаре / Simple inventory using a dictionary
+
+3. **Волны врагов / Enemy waves:**
+   - Волны запускаются по таймеру / Waves start by timer
+   - Башни можно строить по кнопке / Build towers by pressing a key
+   - Башни автоматически стреляют / Towers shoot automatically
+
+4. **Смерть / Game Over:**
+   - Если враги уничтожат базу — конец / Base destroyed = Game Over
+
+5. **Сохранение/загрузка / Save & Load:**
+   - Состояние и инвентарь сохраняются в JSON / Save game state in JSON
+
+---
+
+**Навыки / Skills you will practice:**
+- Классы: игрок, враг, башня / Classes: player, enemy, tower
+- Словари и списки / Dictionaries and lists
+- Работа с файлами JSON / File I/O with JSON
+- Простая графика / Basic graphics (rectangles or sprites)
+- Коллизии объектов / Object collision
+- Игровой цикл / Game loop and logic
+
+---
+
+**Что использовать / Tools:**
+- Python + Pygame
+- Простые спрайты / Simple sprites (or rectangles)
+- JSON для сохранений / JSON for save files
+
+---
+
+**Мини-этапы / Mini goals:**
+1. Меню и сцена / Menu and scene
+2. Движение игрока / Player movement
+3. Ресурсы и сбор / Resource gathering
+4. Инвентарь / Inventory
+5. Враги / Enemy wave
+6. Башни / Towers
+7. Проигрыш / Game over
+8. Сохранение / Save/load system
+
+---
