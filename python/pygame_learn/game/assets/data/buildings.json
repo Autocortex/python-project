@@ -1,0 +1,29 @@
+{
+  "main_base": {
+    "image": "home_1lvl.png",
+    "size": [100, 100],
+    "cost": {
+      "wood": 5
+    },
+    "limit": 1,
+    "life": 10,
+    "type": "main_base"
+  },
+  "tower_1lvl": {
+    "image": "tower_1.png",
+    "size": [40, 60],
+    "cost": { "wood": 3 },
+    "limit": 3,
+    "life": 5,
+    "type": "tower"
+  },
+    "wall_tree": {
+    "image": "wall_tree.png",
+    "size": [40, 60],
+    "cost": { "wood": 1 },
+    "limit": 3,
+    "life": 3,
+    "type": "wall",
+      "passable": false
+  }
+}

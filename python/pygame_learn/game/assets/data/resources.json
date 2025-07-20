@@ -1,18 +1,33 @@
 {
   "oak_tree": {
     "image": "oak_tree.png",
-    "size": [48, 64]
+    "size": [48, 64],
+    "health": 5,
+    "harvestable": true,
+    "type": "tree",
+    "drops": {
+      "wood": 2
+    }
   },
   "fruit_tree": {
     "image": "fruit_tree.png",
-    "size": [48, 64]
+    "size": [48, 64],
+    "health": 3,
+    "harvestable": true,
+    "type": "tree",
+    "drops": {
+      "wood": 1,
+      "berries": 2
+    }
   },
   "pine_tree": {
     "image": "pine_tree.png",
-    "size": [48, 72]
-  },
-  "large_tree": {
-    "image": "large_tree.png",
-    "size": [64, 80]
+    "size": [48, 72],
+    "health": 6,
+    "harvestable": true,
+    "type": "tree",
+    "drops": {
+      "wood": 3
+    }
   }
 }
