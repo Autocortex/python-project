@@ -1,0 +1,25 @@
+{%  extends "blogs/base.html" %}
+
+{% block page_header %}
+  <h1 class="display-3">Topics</h1>
+{% endblock page_header %}
+{% block content %}
+    <div class="p-5 mb-4 bg-dark rounded-3 text-light">
+<ul>
+    {% for post in posts %}
+    <li>
+        <strong>{{ post.title }}</strong> - <em>{{ post.date_added }}</em>
+        {{ post.text|linebreaks }}
+    <p>
+        <a href="{% url 'blogs:edit_post' post.id %}">Edit post</a>
+    </p>
+    </li>
+
+    {% empty %}
+    <li>No posts have been added yet.</li>
+    {% endfor %}
+</ul>
+        <h2><a href="{% url 'blogs:new_post' %}">Add a new post</a></h2>
+    </div>
+
+{% endblock content %}

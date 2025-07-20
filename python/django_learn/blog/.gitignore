@@ -1,0 +1,26 @@
+# Виртуальные окружения
+env/
+venv/
+*/env/
+*/venv/
+b_env/
+ll_env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# IDE и редакторы
+.vscode/
+.idea/
+
+# OS файлы
+.DS_Store
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Конфигурации
+.env

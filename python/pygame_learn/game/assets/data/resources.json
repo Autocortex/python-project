@@ -1,0 +1,18 @@
+{
+  "oak_tree": {
+    "image": "oak_tree.png",
+    "size": [48, 64]
+  },
+  "fruit_tree": {
+    "image": "fruit_tree.png",
+    "size": [48, 64]
+  },
+  "pine_tree": {
+    "image": "pine_tree.png",
+    "size": [48, 72]
+  },
+  "large_tree": {
+    "image": "large_tree.png",
+    "size": [64, 80]
+  }
+}
